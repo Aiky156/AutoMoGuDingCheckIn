@@ -12,7 +12,7 @@ def generate_article(
     config: Any,
     title: str,
     job_info: Dict[str, Any],
-    count: int = 500,
+    count: int = 150,
     max_retries: int = 3,
     retry_delay: int = 1,
 ) -> str:
