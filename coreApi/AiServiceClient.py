@@ -23,7 +23,7 @@ def generate_article(
         config (Any): 配置管理器，负责提供所需的 API 配置信息。
         title (str): 文章标题。
         job_info (Dict[str, Any]): 包含工作相关信息的字典。
-        count (int): 文章字数下限，默认为 500。
+        count (int): 文章字数上限，默认为 500。
         max_retries (int): 最大重试次数，默认为 3。
         retry_delay (int): 每次重试的延迟时间（秒），默认为 1。
 
