@@ -12,7 +12,7 @@ def generate_article(
     config: Any,
     title: str,
     job_info: Dict[str, Any],
-    count: int = 150,
+    count: int = 300,
     max_retries: int = 3,
     retry_delay: int = 1,
 ) -> str:
@@ -42,7 +42,7 @@ def generate_article(
     # 动态生成系统提示词，支持更灵活的扩展
     system_prompt = (
         f"根据用户提供的信息撰写一篇文章，内容流畅且符合中文语法规范，"
-        f"不得使用 Markdown 语法，字数不少于 {count} 字。"
+        f"不得使用 Markdown 语法，字数不多于 {count} 字。"
         f"文章需与职位描述相关，并符合以下模板："
         f"\n\n模板：\n实习地点：xxxx\n\n工作内容：\n\nxxxxxx\n\n工作总结：\n\nxxxxxx\n\n"
         f"遇到问题：\n\nxxxxxx\n\n自我评价：\n\nxxxxxx"
