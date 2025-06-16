@@ -1,31 +1,24 @@
+
 {
   "config": {
     "user": {
-      "phone": "工学云手机号",
-      "password": "工学云密码"
+      "phone": "17391568747",
+      "password": "Aa123456"
     },
     "clockIn": {
       "mode": "daily",
       "location": {
-        "address": "四川省 · 成都市 · 高新区 · 在科创十一街附近",
-        "latitude": "30.559922",
-        "longitude": "104.093023",
-        "province": "四川省",
-        "city": "成都市",
-        "area": "高新区"
+        "address": "广州市海珠区黄埔村新港东路2621-2首层自编1001室",
+        "latitude": "23.100133",
+        "longitude": "113.404609",
+        "province": "广东省",
+        "city": "广州市",
+        "area": "海珠区"
       },
       "imageCount": 0,
-      "description": [
-        "今天天气不错",
-        "今天天气很好",
-        "今天天气不太好"
-      ],
+      "description": ["今天天气不错"],
       "specialClockIn": false,
-      "customDays": [
-        1,
-        3,
-        5
-      ]
+      "customDays": [1, 3, 5]
     },
     "reportSettings": {
       "daily": {
@@ -33,7 +26,7 @@
         "imageCount": 0
       },
       "weekly": {
-        "enabled": true,
+        "enabled": false,
         "imageCount": 0,
         "submitTime": 4
       },
@@ -51,29 +44,29 @@
     "pushNotifications": [
       {
         "type": "Server",
-        "enabled": true,
+        "enabled": false,
         "sendKey": "your_key"
       },
       {
         "type": "PushPlus",
-        "enabled": true,
+        "enabled": false,
         "token": "your_token"
       },
       {
         "type": "AnPush",
-        "enabled": true,
+        "enabled": false,
         "token": "your_token",
         "channel": "通道ID,多个用英文逗号隔开",
         "to": "根据官方文档获取"
       },
       {
         "type": "WxPusher",
-        "enabled": true,
+        "enabled": false,
         "spt": "your_spt"
       },
       {
         "type": "SMTP",
-        "enabled": true,
+        "enabled": false,
         "host": "smtp服务地址",
         "port": 465,
         "username": "发件人邮箱",
